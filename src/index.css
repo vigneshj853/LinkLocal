@@ -456,3 +456,122 @@ body {
 .auth-footer {
     font-size: 14px;
 }
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-actions {
+        gap: 8px;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 30px;
+    }
+
+    /* Categories */
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Events */
+    .events-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    /* Event Details */
+    .event-details {
+        padding: 20px;
+    }
+
+    /* Login and Register */
+    .auth-container {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    /* General headings */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-actions {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .categories-grid,
+    .events-grid {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
